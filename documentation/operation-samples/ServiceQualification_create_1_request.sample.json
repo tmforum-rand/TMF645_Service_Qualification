@@ -1,0 +1,47 @@
+{
+    "description": "Maximum download/upload speed for access at an address",
+    "externalId": "SQ101",
+    "expectedQualificationDate": "2017-10-25T12:13:16.361Z",
+    "provideAlternative": true,
+    "provideOnlyAvailable": false,
+    "provideUnavailabilityReason": false,
+    "serviceQualificationItem": [
+        {
+            "id": "1",
+            "service": {
+                "serviceSpecification": {
+                    "id": "111",
+                    "href": "https://mycsp.com:8080/tmf-api/serviceCatalogManagement/v4/serviceSpecification/111", 
+                    "name": "CFS_Access"
+                },
+                "serviceCharacteristic": [
+                    {
+                        "name": "downloadSpeed"
+                    }, 
+                    {
+                        "name": "uploadSpeed"
+                    }
+                ],
+                "place": [
+                    {
+                        "href": "https://mycsp.com:8080/tmf-api/geographicAddressManagement/v4/geographicAddress/25511",
+                        "id": "25511",
+                        "name": "160 de Versailles Avenue 75016 Paris France",
+                        "role": "installationAddress",
+                        "@type": "GeographicAddress"
+                    }
+                ],
+            "expectedServiceAvailabilityDate": "2017-10-27T12:14:16.361Z"
+            }
+        }
+    ],
+    "relatedParty": [
+        {
+            "id": "14", 
+            "href": "https://mycsp.com:8080/tmf-api/partyManagement/v4/party/14", 
+            "role": "requester", 
+            "name": "John Doe",
+            "@referredType": "Individual"
+        }
+    ]
+}

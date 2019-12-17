@@ -1,0 +1,73 @@
+{
+    "ServiceQualification": {
+        "list": {
+            "samples": [
+                {
+                    "description": "Here's an example of a request for retrieving multiple service qualifications. Get the id, href, and effective qualification date for done serviceQualifications.",
+                    "fields": "id,href,effectiveQualificationDate", 
+                    "filtering": "state=done", 
+                    "content-type": "application/json", 
+                    "response" : "$_ServiceQualification_list_1_response"
+                }
+            ]
+        }, 
+        "retrieve": {
+            "samples" : [
+                {
+                    "description" : "Here's an example of a request for retrieving a specific service qualification.",
+                    "content-type": "application/json",
+                    "objectId": "5565",
+                    "response" : "$_ServiceQualification_retrieve_1_response"
+        		}
+            ]
+        }, 
+        "create": {
+            "samples" : [
+                {
+                    "description" : "Here's an example of a request for creating a ServiceQualification resource to retrieve the maximum download/upload speed for an Access service at a specified address. The request contains one item with the reference of the service qualification to be qualified and the place where.",
+                    "content-type": "application/json",
+                    "request" : "$_ServiceQualification_create_1_request",
+                    "response" : "$_ServiceQualification_create_1_response"
+        		},
+                {
+                    "description" : "Here's an example of a request for creating a ServiceQualification resource to check if an access service with IPTV (4K) can be delivered at a specified address. The request contains two items: one for the access service and the other for the IPTV that relies on the access service.",
+                    "content-type": "application/json",
+                    "request" : "$_ServiceQualification_create_2_request",
+                    "response" : "$_ServiceQualification_create_2_response"
+        		},
+                {
+                    "description" : "Here's an example of a request for creating a ServiceQualification resource to check if a new IP TV service can be delivered at the same location of an existing and active Access service. Before doing the service qualification, the Access service has been retrieved from the service inventory and we get its id.  The request contains one item for the IP TV service and we use the service relationship to describe the dependency with the Access service with id 741.",
+                    "content-type": "application/json",
+                    "request" : "$_ServiceQualification_create_3_request",
+                    "response" : "$_ServiceQualification_create_3_response"
+        		},
+                {
+                    "description" : "Here's an example of a request for creating a ServiceQualification resource to check if we can upgrade the download speed  of an existing and active Access service from 100 Mb/s to 600 Mb/s. Before doing the service qualification, the Access service has been retrieved from the service inventory and we get its id.  The request contains one item for the Access service. We don’t need to specify service specification and place information in the request. Providing the inventory id for the requested service to be qualified should be enough.",
+                    "content-type": "application/json",
+                    "request" : "$_ServiceQualification_create_4_request",
+                    "response" : "$_ServiceQualification_create_4_response"
+        		}
+            ]
+        },
+        "partialupdate": {
+            "samples" : [
+                {
+                    "description" : "Here's an example of a request for patching a service qualification. In this example, the downstream bandwidth is increased to 400Mb/s.",
+                    "content-type": "application/merge-patch+json",
+                    "objectId": "5565",
+                    "request" : "$_ServiceQualification_partialupdate_1_request",
+                    "response" : "$_ServiceQualification_partialupdate_1_response"
+        		}
+            ]
+        },
+        "delete":  {
+            "samples" : [
+                {
+                    "description" : "Here's an example of a request for deleting a service qualification.",
+                    "content-type": "application/json",
+                    "objectId": "5565"
+        		}
+            ]
+        }
+    }
+}

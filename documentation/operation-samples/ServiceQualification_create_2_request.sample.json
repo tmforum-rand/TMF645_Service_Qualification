@@ -1,0 +1,62 @@
+{
+    "externalId": "SQ102",
+    "description": "Deliver access and IPTV at a given address",
+    "expectedQualificationDate": "2017-10-25T12:13:16.361Z",
+    "provideAlternative": true,
+    "provideOnlyAvailable": true,
+    "provideUnavailabilityReason": false,
+    "serviceQualificationItem": [
+        {
+            "id": "1",
+            "expectedServiceAvailabilityDate": "2017-10-27T12:14:16.361Z",
+            "service": {
+                "serviceSpecification": {
+                    "id": "111",
+                    "href": "https://mycsp.com:8080/tmf-api/serviceCatalogManagement/v4/serviceSpecification/111", 
+                    "name": "CFS_Access"
+                },
+                "serviceCharacteristic": [
+                    {
+                        "name": "downloadSpeed"
+                    }, 
+                    {
+                        "name": "uploadSpeed"
+                    }
+                ],
+                "place": [
+                    {
+                        "href": "https://mycsp.com:8080/tmf-api/geographicAddressManagement/v4/geographicAddress/25511",
+                        "id": "25511",
+                        "name": "160 de Versailles Avenue 75016 Paris France",
+                        "role": "installationAddress",
+                        "@type": "GeographicAddress"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "2",
+            "expectedServiceAvailabilityDate": "2017-10-27T12:14:16.361Z",
+            "service": {
+                "serviceSpecification":{
+                    "id": "222",
+                    "href": "https://mycsp.com:8080/tmf-api/serviceCatalogManagement/v4/serviceSpecification/222", 
+                    "name": "CFS_IPTV"
+                },
+                "serviceCharacteristic": [
+                    {
+                        "name": "4kEnabled",
+                        "valueType": "boolean",
+                        "value": true
+                    } 
+                ]
+            },
+            "qualificationItemRelationship": [
+                {
+                    "type": "reliesOn",
+                    "id": "1"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,28 @@
+{
+    "id": "57", 
+    "href": "https://mycsp.com:8080/tmf-api/serviceQualificationManagement/v4/serviceQualification/57", 
+    "serviceQualificationItem": [	
+        {
+            "id": "1", 
+            "service": {
+                "serviceSpecification": {
+                    "id": "111",
+                    "href": "https://mycsp.com:8080/tmf-api/serviceCatalogManagement/v4/serviceSpecification/111", 
+                    "name": "CFS_Access"
+                },
+                "serviceCharacteristic": [
+                    {
+                        "name": "downloadSpeed",
+                        "valueType": "object",
+                        "value":
+                        {
+                            "@type": "Bandwidth",
+                            "@schemaLocation": "https://mycsp.com:8080/tmf-api/schema/Service/Bandwidth.schema.json",
+                            "speed": "400Mb/s"
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

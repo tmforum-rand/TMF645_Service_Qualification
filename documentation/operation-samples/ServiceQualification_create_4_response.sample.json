@@ -1,0 +1,49 @@
+{
+    "id": "59",
+    "href": "https://mycsp.com:8080/tmf-api/serviceQualificationManagement/v4/serviceQualification/59",
+    "serviceQualificationDate": "2017-10-25T12:13:16.361Z",
+    "externalId": "SQ104",
+    "description": "Upgrade the download speed of an existing access",
+    "state": "done",
+    "qualificationResult": "qualified",
+    "expectedQualificationDate": "2017-10-25T12:13:16.361Z",
+    "estimatedResponseDate": "2017-10-25T12:13:16.361Z",
+    "effectiveQualificationDate": "2017-10-25T12:14:16.361Z",
+    "expirationDate": "2017-11-25T12:13:16.361Z",
+    "provideAlternative": false,
+    "provideOnlyAvailable": true,
+    "provideUnavailabilityReason": false,
+    "serviceQualificationItem": [
+        {
+            "id": "1",
+            "state": "done",
+            "expectedServiceAvailabilityDate": "2017-10-27T12:14:16.361Z",
+            "expirationDate": "2017-11-25T12:13:16.361Z",
+            "qualificationResult": "qualified",
+            "service": {
+                "id": "741",
+                "serviceCharacteristic": [
+                    {
+                        "name": "downloadSpeed",
+                        "valueType": "object",
+                        "value":
+                        {
+                            "@type": "Bandwidth",
+                            "@schemaLocation": "https://mycsp.com:8080/tmf-api/schema/Service/Bandwidth.schema.json",
+                            "speed": "600Mb/s"
+                        }
+                    }
+                ]
+            }
+        }
+    ],
+    "relatedParty": [
+        {
+            "id": "16", 
+            "href": "https://mycsp.com:8080/tmf-api/partyManagement/v4/party/16", 
+            "role": "requester", 
+            "name": "Adam Smith",
+            "@referredType": "Individual"
+        }
+    ]
+}

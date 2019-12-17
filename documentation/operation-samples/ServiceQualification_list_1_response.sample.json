@@ -1,0 +1,17 @@
+[
+    {
+        "id": "56", 
+        "href": "https://mycsp.com:8080/tmf-api/serviceQualificationManagement/v4/serviceQualification/56", 
+        "effectiveQualificationDate": "2017-10-25T12:13:16.361Z"
+    },
+{
+        "id": "46", 
+        "href": "https://mycsp.com:8080/tmf-api/serviceQualificationManagement/v4/serviceQualification/46", 
+        "effectiveQualificationDate": "2017-07-01T12:13:16.361Z"
+    },
+    {
+        "id": "31", 
+        "href": "https://mycsp.com:8080/tmf-api/serviceQualificationManagement/v4/serviceQualification/31", 
+        "effectiveQualificationDate": "2017-03-15T12:13:16.361Z"
+    }
+]

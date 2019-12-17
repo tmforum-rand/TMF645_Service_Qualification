@@ -1,0 +1,21 @@
+{
+    "description": "This  service qualification ...", 
+    "effectiveQualificationDate": "2018-11-22T00:00", 
+    "estimatedResponseDate": "2018-11-22T00:00", 
+    "expectedQualificationDate": "2018-11-22T00:00", 
+    "expirationDate": "2018-11-22T00:00", 
+    "externalId": "567", 
+    "href": "https:/host:port/tmf-api/serviceQualification/v1/serviceQualification/3590", 
+    "id": "3590", 
+    "provideAlternative": false, 
+    "provideUnavailabilityReason": true, 
+    "qualificationResult": "a string ...", 
+    "relatedParty": [
+        {}
+    ], 
+    "serviceQualificationDate": "2018-11-22T00:00", 
+    "serviceQualificationItem": [
+        {}
+    ], 
+    "state": "a string ..."
+}

@@ -1,0 +1,37 @@
+{
+    "externalId": "SQ103",
+    "description": "Deliver IPTV at the same location of an existing access",
+    "expectedQualificationDate": "2017-10-25T12:13:16.361Z",
+    "provideAlternative": true,
+    "provideOnlyAvailable": true,
+    "provideUnavailabilityReason": true,
+    "serviceQualificationItem": [
+        {
+            "id": "1",
+            "expectedServiceAvailabilityDate": "2017-10-27T12:14:16.361Z",
+            "service": {
+                "serviceSpecification": {
+                    "id": "222",
+                    "href": "https://mycsp.com:8080/tmf-api/serviceCatalogManagement/v4/serviceSpecification/222", 
+                    "name": "CFS_IPTV"
+                },
+                "serviceRelationship": [
+                    {
+                        "relationshipType": "ReliesOn",
+                        "href": "ServiceQualification_create_3_request.sample.json",
+                        "id": "741"
+                    }
+                ]
+            }
+        }
+    ],
+    "relatedParty": [
+        {
+            "id": "16", 
+            "href": "https://mycsp.com:8080/tmf-api/partyManagement/v4/party/16", 
+            "role": "requester", 
+            "name": "Adam Smith",
+            "@referredType": "Individual"
+        }
+    ]
+}
